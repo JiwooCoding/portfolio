@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'TAEBAEKfont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(./font/NotoSansKR-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @keyframes로 애니메이션 정의 */
+@keyframes customBounce {
+    0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+    }
+    40% {
+    transform: translateY(-20px);
+    }
+    60% {
+    transform: translateY(-10px);
+    }
+}
+
+  /* 새로 정의한 애니메이션 클래스 적용 */
+.custom-bounce {
+    animation: customBounce 1s infinite;
+}
