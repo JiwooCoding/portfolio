@@ -2,25 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import {faUser,faCakeCandles,faBriefcase,faSchoolFlag,faEnvelope,faMobileScreenButton,faWrench } from '@fortawesome/free-solid-svg-icons';
 import { SizeProp } from '@fortawesome/fontawesome-svg-core';
-import java from '../../assets/icons/JAVA.png'
 import js from '../../assets/icons/JS.png'
 import ts from '../../assets/icons/TS.png'
-import jq from '../../assets/icons/JQ.png'
-import spr from '../../assets/icons/SPRING.png'
-import spb from '../../assets/icons/SPRINGBOOT.png'
 import rd from '../../assets/icons/REDUX.png'
-import ec from '../../assets/icons/ECLL.png'
 import html from '../../assets/icons/HTML.png'
 import css from '../../assets/icons/CSS.png'
 import scss from '../../assets/icons/SCSS.png'
-import my from '../../assets/icons/MYSQL.png'
-import ora from '../../assets/icons/ORACLE.png'
-import post from '../../assets/icons/POST.png'
 import next from '../../assets/icons/next.svg'
 import slack from '../../assets/icons/slack.png'
 import fire from '../../assets/icons/FIRE.png'
 import notion from '../../assets/png-transparent-notion-logo.png'
-import ajax from '../../assets/icons/ajax.png'
 
 interface MyInfoDetailProps{
     data:string[];
@@ -80,7 +71,14 @@ return (
                     <FontAwesomeIcon icon={faBriefcase} />
                     <h2>업무 경험</h2>
                 </div>
-                <ul className=''>
+                <ul className='grid gap-3'>
+                    <li className='bg-[#905cea0f] px-3 py-3 rounded-md  grid'>
+                        <span className='font-bold text-md'>TDI(티디아이)</span>
+                        <span className='text-gray-500 text-[15px] mb-2'>
+                            IT업무(인턴)
+                        </span>
+                        <span className='text-[14px]'>2024.05 - 2024.08</span>
+                    </li>
                     <li className='bg-[#905cea0f] px-3 py-3 rounded-md  grid'>
                         <span className='font-bold text-md'>(주)골든비</span>
                         <span className='text-gray-500 text-[15px] mb-2'>비서사무직</span>
@@ -97,7 +95,7 @@ return (
                     <li className='bg-[#905cea0f] px-3 py-3 rounded-md grid'>
                         <span className='font-bold text-md'>패스트캠퍼스</span>
                         <span className='text-gray-500 text-[15px] mb-2'>프론트엔드 개발 online강의</span>
-                        <span className='text-[14px]'>2023.09 - 2024.01</span>
+                        <span className='text-[14px]'>2023.10 - 2024.03</span>
                     </li>
                     <li className='bg-[#905cea0f] px-3 py-3 rounded-md grid'>
                         <span className='font-bold text-md'>KOSMO</span>
@@ -127,22 +125,23 @@ return (
                 <hr/>
                 <div className='grid gap-3 bg-[#5c99ea0f] px-3 py-3 rounded-md'>
                     <span className='font-bold'>Language</span>
-                    <div className='grid sm:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-2 text-sm'>
-                        <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c3c0ff57] gap-1'><img src={java} width={25}/>JAVA</span>
-                        <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c3c0ff57] gap-1'><img src={js} width={17}/>Javascript</span>
-                        <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c3c0ff57] gap-1'><img src={ts} width={15}/>Typescript</span>
-                        <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c3c0ff57] gap-1'><img src={jq} width={17}/>JQuery</span>
-                        <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c3c0ff57] gap-1'><img src={ajax} width={25}/>Ajax</span>
+                    <div className='grid gap-2 text-sm'>
+                        <div className='flex'>
+                            <span className='py-[2px] px-1 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c3c0ff57] gap-1'><img src={js} width={17}/>Javascript</span>
+                            <span>로 비동기 작업, DOM 조작 및 API 통신을 구현할 수 있으며,</span>
+                        </div>
+                        <div className='flex'>
+                            <span className='py-[2px] px-1 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c3c0ff57] gap-1'><img src={ts} width={15}/>Typescript</span>
+                            <span>를 활용해 타입 안정성과 코드 품질을 높이는 데 익숙합니다.</span>
+                        </div>
                     </div>
                 </div>
                 <div className='grid gap-3 bg-[#5c99ea0f] px-3 py-3 rounded-md'>
                     <span className='font-bold'>Framework / Library</span>
                     <div className='grid sm:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-2 text-sm'>
                         <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#ca96f33d] gap-1'><img src={next} width={17}/>Next.js</span>
-                        <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#ca96f33d] gap-1'><img src={spr} width={20}/>Spring</span>
-                        <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#ca96f33d] gap-1'><img src={spb} width={20}/>Spring boot</span>
-                        <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#ca96f33d] gap-1'><img src={ec} width={20}/>Eclipse</span>
                         <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#ca96f33d] gap-1'><img src={rd} width={25}/>Redux</span>
+                        
                     </div>
                 </div>
                 <div className='grid gap-3 bg-[#5c99ea0f] px-3 py-3 rounded-md'>
@@ -153,14 +152,14 @@ return (
                         <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#ecbbd04f] gap-1'><img src={scss} width={25}/>SCSS</span>
                     </div>
                 </div>
-                <div className='grid gap-3 bg-[#5c99ea0f] px-3 py-3 rounded-md'>
+                {/* <div className='grid gap-3 bg-[#5c99ea0f] px-3 py-3 rounded-md'>
                     <span className='font-bold'>Database</span>
                     <div className='grid sm:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-2 text-sm'>
                         <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c0cfff57] gap-1'><img src={my} width={25}/>My-SQL</span>
                         <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c0cfff57] gap-1'><img src={ora} width={20}/>Oracle</span>
                         <span className='text-gray-500 rounded-sm whitespace-nowrap text-center flex justify-center items-center bg-[#c0cfff57] gap-1'><img src={post} width={20}/>PostgreSQL</span>
                     </div>
-                </div>
+                </div> */}
                 <h2 className='px-2 font-bold'>Other</h2>
                 <hr/>
                     <div className='flex gap-3 text-sm'>

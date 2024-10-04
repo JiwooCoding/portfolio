@@ -89,8 +89,8 @@ const HomePage = () => {
               <a href="https://github.com/JiwooCoding">
                 <button className='text-white font-noto text-sm whitespace-nowrap  rounded-[50px] px-8 py-2 bg-purple-500 duration-300 ease-in-out hover:shadow-lg transform hover:-translate-y-1 hover:bg-[#9b30dfab]'>깃허브 둘러보기 <FontAwesomeIcon icon={faGithub} size={'xl' as SizeProp}/></button>
               </a>
-              <a href="https://early-act-fd3.notion.site/3eab0106528a450c99f4cab49ebe5e74">
-                <button className='font-noto text-sm whitespace-nowrap border border-solid border-gray-300 rounded-[50px] px-8 py-2 duration-300 ease-in-out hover:shadow-lg transform hover:-translate-y-1'>이력서 보기 <FontAwesomeIcon icon={faFile} /></button>
+              <a href="https://early-act-fd3.notion.site/ee131f92003b429abe985e97b0ef5549">
+                <button className='font-noto text-sm whitespace-nowrap border border-solid border-gray-300 rounded-[50px] px-8 py-2 duration-300 ease-in-out hover:shadow-lg transform hover:-translate-y-1'>최근 프로젝트 <FontAwesomeIcon icon={faFile} /></button>
               </a>
             </div>
           </div>
